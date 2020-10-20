@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('aaa');
-});
+Route::get('/','LoguinController@index');
 
 Auth::routes();
 
