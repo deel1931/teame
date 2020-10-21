@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>メンター詳細ページ</title>
 </head>
 <body>
-   
+    <h1>メンター詳細ページ</h1>
     <a href="{{ route('login') }}">Login</a>
     <a href="{{ route('register') }}">Register</a>
 </body>

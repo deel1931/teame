@@ -8,7 +8,7 @@ class LoguinController extends Controller
 {
     public function index()
     {
-    return view('aaa');
+    return view('top');
     }
     
 }

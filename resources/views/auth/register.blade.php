@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">新規登録</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -62,12 +62,12 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="fullname" class="col-md-4 col-form-label text-md-right">年齢</label>
+                            <label for="age" class="col-md-4 col-form-label text-md-right">年齢</label>
  
                             <div class="col-md-6">
-                                <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required >
+                                <input id="age" type="number" class="form-control @error('age') is-invalid @enderror" name="age" value="{{ old('age') }}" required >
  
-                                @error('fullname')
+                                @error('age')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -76,12 +76,14 @@
                         </div>     
 
                         <div class="form-group row">
-                            <label for="fullname" class="col-md-4 col-form-label text-md-right">性別</label>
+                            <label for="gender" class="col-md-4 col-form-label text-md-right">性別</label>
  
                             <div class="col-md-6">
-                                <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required >
- 
-                                @error('fullname')
+                                <input id="gender" type="radio" class="form-control @error('gender') is-invalid @enderror" name="gender" value="男性"  >男性
+                                <input id="gender" type="radio" class="form-control @error('gender') is-invalid @enderror" name="gender" value="女性" required >女性
+                                <input id="gender" type="radio" class="form-control @error('gender') is-invalid @enderror" name="gender" value="その他" required >その他
+                                
+                                @error('gender')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -90,12 +92,12 @@
                         </div>     
 
                         <div class="form-group row">
-                            <label for="fullname" class="col-md-4 col-form-label text-md-right">自己PR</label>
+                            <label for="PR" class="col-md-4 col-form-label text-md-right">自己PR</label>
  
                             <div class="col-md-6">
-                                <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required >
+                                <textarea id="PR"  class="form-control @error('PR') is-invalid @enderror" name="PR" value="{{ old('PR') }}" required ></textarea>
  
-                                @error('fullname')
+                                @error('PR')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -105,9 +107,20 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" id="btn">
                                     登録
                                 </button>
+                                
+                                
+                                <script>
+                                var btn = document.getElementById('btn');
+ 
+                                btn.addEventListener('click', function() {
+ 
+                                window.confirm('こちらの情報でよろしいですか？');
+ 
+                                    })
+                                </script>
                             </div>
                         </div>
                     </form>
