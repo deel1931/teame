@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<h2>現在メンターの募集は行っておりません</h2>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

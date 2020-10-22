@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','LoguinController@index');
+Route::get('/','LoguinController@index')->name('top');
+Route::get('menta','LoguinController@menta')->name('syousai');
 
 Auth::routes();
 

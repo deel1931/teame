@@ -10,5 +10,8 @@ class LoguinController extends Controller
     {
     return view('top');
     }
-    
+    public function menta()
+    {
+        return view('menta');
+    }
 }

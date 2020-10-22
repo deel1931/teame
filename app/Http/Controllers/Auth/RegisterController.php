@@ -75,5 +75,6 @@ class RegisterController extends Controller
             'gender' => $data['gender'],
             'PR' => $data['PR'],
         ]);
+        return view('top');
     }
 }
