@@ -15,7 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','LoguinController@index')->name('top');
 Route::get('menta','LoguinController@menta')->name('syousai');
+Route::post('/mnta', 'LoguinController@send');
 
-Auth::routes();
 
+
+
+
+
+
+
+Route::auth();
 Route::get('/home', 'HomeController@index')->name('home');
