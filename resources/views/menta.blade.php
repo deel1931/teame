@@ -1,17 +1,13 @@
 @extends('layouts.app')
 @section('syousai')
 <h2>メンター</h2>
-     @foreach($mentor as $menta)
-   <p> 名前：{{$menta->name}}</p>
-   <p> 年齢：{{$menta->age}}</p>
-    <p>性別：{{$menta->gender}}</p>
-   <p> git:{{$menta->git}}</p>
-    <p>qiita:{{$menta->qiita}}</p>
-   <p> 経歴：{{$menta->carrier}}<p>
-   <p> 得意な言語：{{$menta->like}}</p>
-   <p> 連絡方法：{{$menta->contact}}</p>
-   <input type="submit" value="申込">
-    @endforeach
-    
+  <form action="" method="post">
+   @csrf
+   名前：葛山　宏樹
+   <input type="submit"name="button1" value="申込"><br>
+   名前：横山　たくみ
+   <input type="submit"name="button2" value="申込"><br>
+   名前：大坂間　ゆうき
+   <input type="submit"name="button3" value="申込"><br>
    
  @endsection

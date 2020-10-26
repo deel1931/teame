@@ -1,15 +1,13 @@
-{{ $data["name"] }} 様
 
-お問い合わせありがとうございます。
-以下の内容で受け付けました。
+応募が届きました<br>
 
 =================
-お名前： {{ $data["name"] }}
+お名前： {{ $contact->name}}<br>
 
-メールアドレス： {{ $data["email"] }}
+メールアドレス： {{ $contact->email }}<br>
 
-年齢： {{ $data["age"] }}
+年齢： {{ $contact->age}}<br>
 
-性別： {{ $data["gender"] }}
+性別： {{ $contact->gender}}<br>
 
-PR:{{$data["PR"]}}
+PR:{{$contact->PR}}<br>

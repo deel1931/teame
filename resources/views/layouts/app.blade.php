@@ -78,5 +78,6 @@
     </div>
     @yield('child')
     @yield('syousai')
+    @yield('complete')
 </body>
 </html>

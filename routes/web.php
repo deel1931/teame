@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','LoguinController@index')->name('top');
 Route::get('menta','LoguinController@menta')->name('syousai');
-Route::post('/mnta', 'LoguinController@send');
-
+Route::post('menta', 'LoguinController@send')->name('send');
+Route::get('complete','LoguinController@send');
 
 
 
