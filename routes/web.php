@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','LoguinController@index')->name('top');
+Route::group(['middleware'=>'auth'],function(){
 Route::get('menta','LoguinController@menta')->name('syousai');
 Route::post('menta', 'LoguinController@send')->name('send');
+});
 Route::get('complete','LoguinController@send');
 
 
