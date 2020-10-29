@@ -42,7 +42,9 @@
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">ログイン</a>
+                               
                             </li>
+                           
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">新規登録</a>
@@ -58,15 +60,16 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        ログアウト
                                     </a>
-
+                                
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </div>
                             </li>
                         @endguest
+                        <a href="{{route('user') }}">ユーザー情報</a>
                     </ul>
                 </div>
             </div>
@@ -79,5 +82,7 @@
     @yield('child')
     @yield('syousai')
     @yield('complete')
+    @yield('user')
+    @yield('edit')
 </body>
 </html>

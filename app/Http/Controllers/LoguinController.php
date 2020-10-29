@@ -35,5 +35,30 @@ class LoguinController extends Controller
         Mail::to($to)->send(new ContactMail($contact));
         return view('complete');
     }
-    
+    public function user()
+        {
+            $user=Auth::user();
+            return view('user',['user'=>$user]);
+        }
+        public function edit()
+        {
+            $user=Auth::user();
+            return view('edit',['user'=>$user]);
+        }
+        public function hensyuu(Request $request)
+        {
+            $validatedData = $request->validate([
+            'email'=>'unique:users,email',
+            ],
+        [
+             'email.unique:users,email'=>'メールアドレスが重複しています',
+        ]);
+         $auth=Auth::user();
+
+         $form=$request->all();
+         unset($form['_token']);
+
+         $auth->fill($form)->save();
+         return redirect('user');
+        }
 }
