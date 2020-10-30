@@ -36,3 +36,7 @@ Route::post('edit/id','LoguinController@hensyuu')->name('hensyuu');
 
 Route::auth();
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
