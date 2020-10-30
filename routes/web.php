@@ -17,7 +17,9 @@ Route::get('/','LoguinController@index')->name('top');
 
 Route::group(['middleware'=>'auth'],function(){
 Route::get('menta','LoguinController@menta')->name('syousai');
+Route::get('menta2','LoguinController@menta2')->name('syousai2');
 Route::post('menta', 'LoguinController@send')->name('send');
+Route::post('menta2', 'LoguinController@send2')->name('send2');
 });
 
 Route::get('complete','LoguinController@send');

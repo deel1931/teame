@@ -20,6 +20,11 @@ class LoguinController extends Controller
         $mentor=Mentor::all();
         return view('menta',compact('mentor'));
     }
+    public function menta2()
+    {
+        
+        return view('menta2',compact('mentor'));
+    }
     public function send(Request $request)
     {
         if(isset($_POST['button1'])){
@@ -34,6 +39,21 @@ class LoguinController extends Controller
         $contact=Auth::user();
         Mail::to($to)->send(new ContactMail($contact));
         return view('complete');
+    }
+    public function send2(Request $request)
+    {
+        if(isset($_POST['button1'])){
+            $to=['yasuon1931@gmail.com'];
+            }else if(isset($_POST['button2'])){
+            $to=['taikun1931@gmail.com'];
+            }else if(isset($_POST['button3'])){
+            $to=['taiko19990301@gmail.com'];
+            }else{
+                echo '送信エラー';
+            }
+            $contact=Auth::user();
+            Mail::to($to)->send(new ContactMail($contact));
+            return view('complete');
     }
     public function user()
         {

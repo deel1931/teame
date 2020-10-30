@@ -81,6 +81,7 @@
     </div>
     @yield('child')
     @yield('syousai')
+    @yield('syousai2')
     @yield('complete')
     @yield('user')
     @yield('edit')
