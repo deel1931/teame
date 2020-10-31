@@ -1,4 +1,56 @@
 
+.a {
+    background-color:#FFF100;
+    padding: 40px;
+    text-align: center;
+    }
+.b {
+    /* height:300px;  */
+    margin-top:80px;
+    margin-left:300px;
+    margin-bottom:400px;
+}
+.main-box{
+    top:520px;
+    margin-left:800px;
+    position: absolute; 
+    bottom :200px；
+}
+h6{
+    margin-bottom:5px;
+}
+h3{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.speech{
+    background-image: none;
+    margin-left:320px;
+    position: absolute; 
+    top:750px;
+    
+}
+h4{
+    position: absolute; 
+    left:10px;
+    top:57px;
+    color: #fff;
+    line-height: 1.7em;
+}
+.button{
+   background-color: #FFF100;
+   width:500px;padding:10px;font-size:30px;
+   margin-left:470px;
+   position: absolute; top:950px;
+}
+h2{
+    text-align: center;
+ }
+ h5{
+    font-size:18px;
+    line-height: 25px;
+ }
+ 
 
 * {
     padding: 0;
@@ -10,10 +62,6 @@
     height: 80px;
     position: relative;
     line-height: 80px;
-}
-.heder{
-    padding-left: 40px;
-    font-size: 500px;
 }
 h1 {
     padding-left: 40px;
@@ -46,9 +94,8 @@ h1 {
 .saitech-logo {
     height: 80%;
 }
-.main-img {
-    width: 100%;
-}
+
+
 .img-box {
     background-color: #252525;
 }
@@ -125,19 +172,9 @@ h1 {
 .mentor-info-img {
     border: 1px solid #333333;
 }
-.button {
-    background: #FFF100;
-    text-align: center;
-    width: 140px;
-    height: 35px;
-    line-height: 35px;
-    border: 1px solid #252525;
-    border-radius: 6px;
-}
-.button a {
-    color: #000;
-    text-decoration: none;
-}
+
+
+
 #footer {
     background-color: #252525;
     height: 350px;
@@ -172,3 +209,8 @@ h1 {
     color: #fff;
     text-align: center;
 }
+
+
+
+
+

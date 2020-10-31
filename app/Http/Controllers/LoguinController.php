@@ -81,4 +81,8 @@ class LoguinController extends Controller
          $auth->fill($form)->save();
          return redirect('user');
         }
+        public function bosyuu()
+        {
+            return view('bosyuu');
+        }
 }

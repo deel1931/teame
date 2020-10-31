@@ -31,8 +31,12 @@ Route::get('user','LoguinController@user')->name('user');
 Route::get('edit','LoguinController@edit')->name('edit');
 Route::post('edit/id','LoguinController@hensyuu')->name('hensyuu');
 
-
+Route::get('bosyuu','LoguinController@bosyuu')->name('bosyuu');
 
 
 Route::auth();
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
 Route::get('/home', 'HomeController@index')->name('home');

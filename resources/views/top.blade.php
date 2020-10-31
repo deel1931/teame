@@ -1,9 +1,6 @@
 
 @extends('layouts.app')
 @section('child')
-<a href="{{ route('syousai') }}">メンターの詳細</a><br>
-<p>メンター２</p>
-<a href="{{ route('syousai2') }}">メンターの詳細</a><br>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -20,8 +17,8 @@
                 <li class="gnav-item"><a href="">メンター紹介</a></li>
                 <li class="gnav-item"><a href="">コース・料金</a></li>
                 <li class="gnav-item"><a href="">ユーザーの声</a></li>
-                <li class="gnav-item"><a href="">メンター募集について</a></li>
-                <li class="gnav-item"><a href="">新規会員登録</a></li>
+                <li class="gnav-item"><a href="bosyuu">メンター募集について</a></li>
+                <li class="gnav-item"><a href="{{ route('register') }}">新規会員登録</a></li>
             </ul>
         </nav>
     </header>
@@ -75,7 +72,7 @@
                         <p>30歳</p>
                         <p>フリーランスエンジニア</p>
                         <p>◯◯◯が得意です！よろしくお願いします！</p>
-                        <p class="button"><a href="{{ route('syousai2') }}">詳しくはこちら</a></p>
+                        <p class="button"><a href="{{ route('syousai') }}">詳しくはこちら</a></p>
                     </div>
                     <img class="mentor-info-img" width="250" height="250" src="images/FFFFFF.png" alt="">
                 </section>
@@ -86,7 +83,7 @@
                         <p>30歳</p>
                         <p>フリーランスエンジニア</p>
                         <p>◯◯◯が得意です！よろしくお願いします！</p>
-                        <p class="button"><a href="">詳しくはこちら</a></p>
+                        <p class="button"><a href="{{ route('syousai') }}">詳しくはこちら</a></p>
                     </div>
                     <img class="mentor-info-img" width="250" height="250" src="images/FFFFFF.png" alt="">
                 </section>
@@ -97,7 +94,7 @@
                         <p>30歳</p>
                         <p>フリーランスエンジニア</p>
                         <p>◯◯◯が得意です！よろしくお願いします！</p>
-                        <p class="button"><a href="">詳しくはこちら</a></p>
+                        <p class="button"><a href="{{ route('syousai') }}">詳しくはこちら</a></p>
                     </div>
                     <img class="mentor-info-img" width="250" height="250" src="images/FFFFFF.png" alt="">
                 </section>
