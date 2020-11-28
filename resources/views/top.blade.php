@@ -19,6 +19,7 @@
                 <li class="gnav-item"><a href="">ユーザーの声</a></li>
                 <li class="gnav-item"><a href="bosyuu">メンター募集について</a></li>
                 <li class="gnav-item"><a href="{{ route('register') }}">新規会員登録</a></li>
+                <li class="gnav-item"><a href="">ログイン</a></li>
             </ul>
         </nav>
     </header>
