@@ -6,12 +6,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>メンターマッチングサイト</title>
+    <title>Matching With</title>
 </head>
 <body>
     <!-- ここからヘッダー -->
     <header id="header">
-        <h1>メンターマッチングサイト</h1>
+        <h1>Matching With</h1>
         <nav>
             <ul class="gnav">
                 <li class="gnav-item"><a href="">メンター紹介</a></li>
